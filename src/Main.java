@@ -2,13 +2,16 @@ import javax.swing.*;
 
 public class Main {
     static void framePanel() {
-        JFrame object = new JFrame();
-        object.setTitle("Brick Breaker");
-        object.setSize(800,700);
-        object.setLocationRelativeTo(null);
-        object.setResizable(false);
-        object.setVisible(true);
-        object.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame();
+        Rules rules = new Rules();
+
+        frame.setTitle("Brick Breaker");
+        frame.setSize(800,700);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(rules);
     }
     public static void main(String[] args) {
         framePanel();
